@@ -2,6 +2,10 @@
 主要用于实验楼网站每个月课程纠错的数量统计。
 
 ## 使用方法
+注意：由于实验楼最近三天的页面的时间会显示为“xx小时前”、“1天前”、“2天前”、“3天前”，第4天前的时间才会使用正常的时间表示，前3天的时间不好转换，我们这里暂时不对其进行处理，所以爬虫最早需要每个月的4号才能爬取上一个月的纠错数据。
+
+实验楼网站的纠错页面URL地址为：https://www.shiyanlou.com/questions/?type=course_error&page=1
+
 ```
 $ sudo pip3 install -r requirements.txt
 $ python3 shiyanlou_course_error_spider.py
